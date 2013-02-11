@@ -1,0 +1,8 @@
+inherit rubygem
+
+NAME="ruby-coffee-script"
+VERSION=2.2.0
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby CoffeeScript extension"
+DESCRIPTION="Ruby CoffeeScript is a bridge to the JS CoffeeScript compiler."
