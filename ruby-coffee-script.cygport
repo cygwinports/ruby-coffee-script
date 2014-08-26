@@ -1,8 +1,15 @@
 inherit rubygem
 
 NAME="ruby-coffee-script"
-VERSION=2.2.0
+VERSION=2.3.0
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby CoffeeScript extension"
 DESCRIPTION="Ruby CoffeeScript is a bridge to the JS CoffeeScript compiler."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_coffee_script_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_coffee_script_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
+
